@@ -1,0 +1,185 @@
+.repo {
+    background-color: #141416;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #9da5d1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 1 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  h3{
+    text-transform: uppercase;
+    color: #9da5d1;
+  }
+  .repo p {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 0.5rem;
+  }
+  
+  .repo:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem; 
+  }
+  
+  .stats div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #9da5d1;
+    padding: 0.5rem 1rem;
+    background-color: rgba(157, 165, 209, 0.1); 
+    transition: background-color 0.3s ease;
+  }
+  
+  .stats div:hover {
+    background-color: #4ed8c7; 
+  }
+  
+  .stats svg {
+    background-color: #4ed8c7;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .stats svg:hover {
+    background-color: #36b2a2;
+    transform: scale(1.1); 
+  }
+  
+  .repo_btn {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1.2rem;
+    color: #9da5d1;
+    background-color: #2b3566;
+    border-radius: 5px;
+    gap: 0.6rem;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+
+  .common-hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    width: 140%; 
+    border-top: 1px solid #9da5d1; 
+    margin: 1em 0; 
+    padding: 0;
+    opacity: 0.5; 
+  }
+  
+  .repo_btn:hover {
+    background-color: #3a467d; 
+    transform: scale(1.05); 
+  }
+  
+  .repo_btns {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem; 
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.5rem; 
+    margin-top: 0.5rem;
+  }
+  
+  .icons span {
+    font-size: 1.5rem; 
+    color: #4ed8c7; 
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .pageButton {
+    margin: 0 0.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #9da5d1;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .pageButton:disabled {
+    background-color: #4ed8c7; 
+
+    cursor: not-allowed;
+  }
+  
+  .sortButton {
+    background-color: #3a467d; 
+    color: white;             
+    padding: 10px 15px;       
+    border: none;             
+    border-radius: 5px;      
+    cursor: pointer;          
+    transition: background-color 0.3s; 
+    margin-right: 10px;      
+  }
+  
+  .sortButton:hover {
+    background-color: #0056b3; 
+  }
+  
+  .languageFilter {
+    padding: 10px 15px;      
+    border: 1px solid #0974e0; 
+    border-radius: 5px;      
+    cursor: pointer;          
+    background-color: #3a467d;  
+    margin-right: 10px;      
+  }
+  
+  .languageFilter:focus {
+    outline: none;           
+    border-color: #007bff;  
+  }
+  .filters {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .repo {
+      padding: 1.5rem;
+      gap: 1rem;
+    }
+  
+    .stats {
+      gap: 1rem;
+    }
+  
+    .repo_btns {
+      flex-direction: column;
+      gap: 1rem; 
+    }
+  }
+  
