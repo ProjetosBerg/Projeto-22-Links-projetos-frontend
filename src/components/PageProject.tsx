@@ -9,7 +9,7 @@ import { SiCss3, SiHtml5, SiTypescript, SiNextdotjs } from "react-icons/si";
 import Loader from "./Loader";
 import { RepoProps } from "../types/repo";
 import BackBtn from "./BackBtn";
-import axios from './../axios-config';
+import axios from '../axios-config';
 
 interface IconMapping {
   [key: string]: JSX.Element;
