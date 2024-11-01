@@ -63,7 +63,6 @@ const PageProject = () => {
       const data = await res.json();
       
       const repo: { html_url: string } | null = data.find((repo: RepoProps) => repo.name === repository);
-      console.log(repo);
         
       if (repo) {
         setLinkRepository(repo.html_url);
@@ -100,6 +99,7 @@ const PageProject = () => {
 
   const handleLanguageFilter = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setFilterLanguage(event.target.value);
+    setCurrentPage(1);
   };
 
   if (!data && isLoading) return <Loader />;
